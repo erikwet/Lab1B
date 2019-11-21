@@ -42,9 +42,9 @@ public class TransportableHolder implements ITransportableHolder {
     }
 
     public boolean transportableFits(ITransportable transportable){
-        return transportable.getWidth() <= maxTransportableWidth &&
-                transportable.getHeight() <= maxTransportableHeight &&
-                transportable.getLength() <= maxTransportableLength; }
+        return transportable.getWidthMeter() <= maxTransportableWidth &&
+                transportable.getHeightMeter() <= maxTransportableHeight &&
+                transportable.getLengthMeter() <= maxTransportableLength; }
 
     public boolean transporterIsNotFull(){ return transporterStorageList.size() < maxStoredObjects; }
 

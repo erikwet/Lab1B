@@ -2,27 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56a53155-a816-4e78-a8f4-a6f56ba08ad0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Test/CarCarrierTruckTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Workshop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab1/FlatbedTruck.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab1/FlatbedTruck.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab1/META-INF/Lab1.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab1/Scania.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Lab1/FlatbedTruckTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Lab1/META-INF/Lab1.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Lab1/MotorizedVehicleTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Lab1/Saab95Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/CarCarrierTruckTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/CarCarrierTruckTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Car.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CarCarrierTruck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CarCarrierTruck.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FlatbedTruck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlatbedTruck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IMovable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IMovable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IPositionable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IPositionable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ITransportable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ITransportable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ITransportableHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ITransportableHolder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MotorizedVehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MotorizedVehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Movable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Movable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transportable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transportable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scania.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scania.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Transportable.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TransportableHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TransportableHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Workshop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Workshop.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

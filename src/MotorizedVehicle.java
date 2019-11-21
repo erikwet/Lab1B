@@ -9,7 +9,9 @@ public abstract class MotorizedVehicle extends Movable{
     private final double enginePower; // Engine power of the car
     private final Color color; // Color of the car
     private final String modelName; // The car model name
-
+    private final double widthMeter;
+    private final double heightMeter;
+    private final double lengthMeter;
 
     /**
      * Constructor for MotorizedVehicle class
@@ -20,12 +22,15 @@ public abstract class MotorizedVehicle extends Movable{
      * @param color Color of a Car
      * @param modelName Model name of a Car
      */
-    public MotorizedVehicle(Direction currentDirection, double x, double y, int nrDoors, double enginePower, Color color, String modelName) {
+    public MotorizedVehicle(Direction currentDirection, double x, double y, int nrDoors, double enginePower, Color color, String modelName, double widthMeter, double heightMeter, double lengthMeter) {
         super(currentDirection, x, y);
         this.nrDoors = nrDoors;
         this.enginePower = enginePower;
         this.color = color;
         this.modelName = modelName;
+        this.widthMeter = widthMeter;
+        this.heightMeter = heightMeter;
+        this.lengthMeter = lengthMeter;
         stopEngine();
     }
 
@@ -113,4 +118,15 @@ public abstract class MotorizedVehicle extends Movable{
         super.setCurrentSpeed(0);
     }
 
+    public double getWidthMeter() {
+        return widthMeter;
+    }
+
+    public double getHeightMeter() {
+        return heightMeter;
+    }
+
+    public double getLengthMeter() {
+        return lengthMeter;
+    }
 }

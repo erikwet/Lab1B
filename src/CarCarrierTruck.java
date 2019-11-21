@@ -8,10 +8,11 @@ import java.util.Deque;
 public class CarCarrierTruck extends MotorizedVehicle implements ITransportableHolder{
 
     private TransportableHolder transportableHolderParent; //A parent object used to create ERIK VAD HETER DELEGERING?????????????????????????????????+
+    private Deque<ITransportable> transportableStorageList;
     private boolean isRampUp;
 
-    public CarCarrierTruck(Direction currentDirection, double x, double y, int nrDoors, double enginePower, Color color, String modelName, int maxStoredObjects, double maxTransportableWidth, double maxTransportableHeight, double maxTransportableLength, Deque<ITransportable> transportableStorageList) {
-        super(currentDirection, x, y, nrDoors, enginePower, color, modelName);
+    public CarCarrierTruck(Direction currentDirection, double x, double y, int nrDoors, double enginePower, Color color, String modelName, double widthMeter, double heightMeter, double lengthMeter, int maxStoredObjects, double maxTransportableWidth, double maxTransportableHeight, double maxTransportableLength) {
+        super(currentDirection, x, y, nrDoors, enginePower, color, modelName, widthMeter, heightMeter, lengthMeter);
         transportableHolderParent = new TransportableHolder(maxStoredObjects, maxTransportableWidth, maxTransportableHeight, maxTransportableLength, x, y, transportableStorageList);
     }
 

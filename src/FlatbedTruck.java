@@ -8,8 +8,8 @@ public class FlatbedTruck extends MotorizedVehicle {
     private int flatbedAngle;
     private int flatbedAngleMax;
 
-    public FlatbedTruck(Direction currentDirection, double x, double y, int nrDoors, double enginePower, Color color, String modelName, int flatbedAngleMax) {
-        super(currentDirection, x, y, nrDoors, enginePower, color, modelName);
+    public FlatbedTruck(Direction currentDirection, double x, double y, int nrDoors, double enginePower, Color color, String modelName, double widthMeter, double heightMeter, double lengthMeter, int flatbedAngleMax) {
+        super(currentDirection, x, y, nrDoors, enginePower, color, modelName, widthMeter, heightMeter, lengthMeter);
         this.flatbedAngleMax = flatbedAngleMax;
     }
 

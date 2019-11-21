@@ -7,17 +7,17 @@ public interface ITransportable extends IMovable {
      * Gets width for a transportable object.
      * @return The width of a transportable object.
      */
-    double getWidth();
+    double getWidthMeter();
 
     /**
      * Gets height for a transportable object.
      * @return The height of a transportable object.
      */
-    double getHeight();
+    double getHeightMeter();
 
     /**
      * Gets length for a transportable object.
      * @return The length of a transportable object.
      */
-    double getLength();
+    double getLengthMeter();
 }
