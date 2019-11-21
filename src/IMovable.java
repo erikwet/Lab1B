@@ -1,4 +1,4 @@
-public interface IMovable {
+public interface IMovable extends IPositionable{
     /**
      * Possible directions for objects
      */
@@ -6,9 +6,13 @@ public interface IMovable {
         NORTH, EAST, SOUTH, WEST
     }
 
-    double getX();
+    void setCurrentDirection(Direction currentDirection);
 
-    double getY();
+    Direction getCurrentDirection();
+
+    void setCurrentSpeed(double speed);
+
+    double getCurrentSpeed();
 
     /**
      * Makes object move in current direction

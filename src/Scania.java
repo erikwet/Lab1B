@@ -9,6 +9,6 @@ public class Scania extends FlatbedTruck {
      *
      */
     public Scania() {
-        super(2, 500, Color.cyan, "ScaniaS500", 70);
+        super(Direction.NORTH, 10,30, 2, 500, Color.cyan, "ScaniaG530", 70);
     }
 }

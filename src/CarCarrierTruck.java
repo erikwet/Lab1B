@@ -1,10 +1,10 @@
 import java.awt.*;
+import java.util.Deque;
+import java.util.List;
 
 public class CarCarrierTruck extends MotorizedVehicle {
 
-    private boolean isRampUp;
-
-    public CarCarrierTruck(int nrDoors, double enginePower, Color color, String modelName) {
+    public CarCarrierTruck(int nrDoors, double enginePower, Color color, String modelName, int maxStoredObjects, int maxTransportableWidth, int maxTransportableHeight, int maxTransportableLength) {
         super(nrDoors, enginePower, color, modelName);
     }
 
@@ -25,5 +25,11 @@ public class CarCarrierTruck extends MotorizedVehicle {
         }else {
             super.setCurrentSpeed(speed);
         }
+    }
+
+    @Override
+    public void move(){
+        super.move();
+        updateStoredObjectsPosition();
     }
 }
