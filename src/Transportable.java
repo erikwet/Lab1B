@@ -1,4 +1,4 @@
-public class Transportable implements ITransportable {
+public abstract class Transportable implements ITransportable {
 
     private final double widthMeter;
     private final double heightMeter;

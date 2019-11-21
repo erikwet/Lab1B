@@ -2,7 +2,7 @@ import java.awt.*;
 
 /**
  * @author Oscar Arvidson och Erik Wetter
- * Abstract superclass to all Car subobjects
+ * Abstract superclass to all MotorizedVehicles
  */
 public abstract class MotorizedVehicle extends Movable{
     private final int nrDoors; // Number of doors on the car
@@ -12,7 +12,9 @@ public abstract class MotorizedVehicle extends Movable{
 
 
     /**
-     * Constructor for Car class
+     * Constructor for MotorizedVehicle class
+     * @param x x Position in world
+     * @param y y Position in world
      * @param nrDoors Number of doors on a Car
      * @param enginePower Engine power of a Car
      * @param color Color of a Car
@@ -28,7 +30,7 @@ public abstract class MotorizedVehicle extends Movable{
     }
 
     /**
-     * Increases speed of car depending on amount by calling on incrementSpeed
+     * Increases speed of motorized vehicle depending on amount by calling on incrementSpeed
      * @param amount Amount the speed should be increased with
      */
     public void gas(double amount) {
@@ -37,7 +39,7 @@ public abstract class MotorizedVehicle extends Movable{
     }
 
     /**
-     * Decreases speed of car depending on amount by calling on decrementSpeed
+     * Decreases speed of motorized vehicle depending on amount by calling on decrementSpeed
      * @param amount Amount the speed should be decreased with
      */
     public void brake(double amount){
@@ -46,42 +48,42 @@ public abstract class MotorizedVehicle extends Movable{
     }
 
     /**
-     * Returns speed factor of car
+     * Returns speed factor of motorized vehicle
      * @return Returns speed factor (is overridden in subclasses)
      */
     protected double speedFactor() { return 1; }
 
     /**
-     * Increments speed of car depending on amount
+     * Increments speed of motorized vehicle depending on amount
      * @param amount Amount the speed should increment with
      */
     public void incrementSpeed(double amount) { setCurrentSpeed(getCurrentSpeed() + speedFactor() * amount); }
 
     /**
-     * Decrements speed of car depending on amount
+     * Decrements speed of motorized vehicle depending on amount
      * @param amount Amount the speed should decrement with
      */
     public void decrementSpeed(double amount){ setCurrentSpeed(getCurrentSpeed() - speedFactor() * amount); }
 
     /**
-     * Returns number of doors on car
-     * @return number of doors on car
+     * Returns number of doors on motorized vehicle
+     * @return number of doors on motorized vehicle
      */
     public int getNrDoors(){
         return nrDoors;
     }
 
     /**
-     * Returns engine power of car
-     * @return Engine power of car
+     * Returns engine power of motorized vehicle
+     * @return Engine power of motorized vehicle
      */
     public double getEnginePower(){
         return enginePower;
     }
 
     /**
-     * Sets current speed of car to a valid value in the interval [0, enginePower]
-     * @param speed Sets current speed of car
+     * Sets current speed of motorized vehicle to a valid value in the interval [0, enginePower]
+     * @param speed Sets current speed of motorized vehicle
      */
     @Override
     public void setCurrentSpeed(double speed) {
@@ -90,8 +92,8 @@ public abstract class MotorizedVehicle extends Movable{
     }
 
     /**
-     * Gets color of car
-     * @return Color of car
+     * Gets color of motorized vehicle
+     * @return Color of motorized vehicle
      */
     public Color getColor(){
         return color;

@@ -2,7 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56a53155-a816-4e78-a8f4-a6f56ba08ad0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Test/CarCarrierTruckTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Workshop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab1/FlatbedTruck.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab1/FlatbedTruck.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab1/META-INF/Lab1.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab1/Scania.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Lab1/FlatbedTruckTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Lab1/META-INF/Lab1.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Lab1/MotorizedVehicleTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Lab1/Saab95Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CarCarrierTruck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CarCarrierTruck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlatbedTruck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlatbedTruck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IMovable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IMovable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IPositionable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IPositionable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ITransportable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ITransportable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ITransportableHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ITransportableHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MotorizedVehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MotorizedVehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Movable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Movable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Transportable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transportable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TransportableHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TransportableHolder.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,15 +76,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TruckTest.setCurrentSpeedTest">
+  <component name="RunManager" selected="JUnit.CarCarrierTruckTest.setCurrentSpeedTest">
     <configuration default="true" type="Application" factoryName="Application">
-      <module name="Lab1" />
+      <module name="Lab1B" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarCarrierTruckTest.setCurrentSpeedTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab1B" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CarCarrierTruckTest" />
+      <option name="METHOD_NAME" value="setCurrentSpeedTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="FlatbedTruckTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lab1" />
+      <module name="Lab1B" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FlatbedTruckTest" />
       <option name="TEST_OBJECT" value="class" />
@@ -73,7 +103,7 @@
       </method>
     </configuration>
     <configuration name="FlatbedTruckTest.LowerFlatbed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lab1" />
+      <module name="Lab1B" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FlatbedTruckTest" />
       <option name="METHOD_NAME" value="LowerFlatbed" />
@@ -83,7 +113,7 @@
       </method>
     </configuration>
     <configuration name="MovableTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lab1" />
+      <module name="Lab1B" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MovableTest" />
       <option name="TEST_OBJECT" value="class" />
@@ -91,18 +121,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MovableTest.testTurnLeft" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lab1" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MovableTest" />
-      <option name="METHOD_NAME" value="testTurnLeft" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TruckTest.setCurrentSpeedTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lab1" />
+      <module name="Lab1B" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TruckTest" />
       <option name="METHOD_NAME" value="setCurrentSpeedTest" />
@@ -111,13 +131,60 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="Lab1B" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="Lab1B" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CarCarrierTruckTest.setCurrentSpeedTest" />
         <item itemvalue="JUnit.TruckTest.setCurrentSpeedTest" />
         <item itemvalue="JUnit.FlatbedTruckTest" />
         <item itemvalue="JUnit.FlatbedTruckTest.LowerFlatbed" />
         <item itemvalue="JUnit.MovableTest" />
-        <item itemvalue="JUnit.MovableTest.testTurnLeft" />
       </list>
     </recent_temporary>
   </component>

@@ -1,6 +1,10 @@
 import java.awt.*;
 
-public abstract class Car extends MotorizedVehicle implements ITransportable{
+/**
+ * @author Oscar Arvidson och Erik Wetter
+ * Abstract superclass to all Car subobjects
+ */
+public abstract class Car extends MotorizedVehicle implements ITransportable {
 
     private Transportable transportableParent;
 

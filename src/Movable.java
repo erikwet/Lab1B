@@ -1,3 +1,6 @@
+/**
+ *
+ */
 public abstract class Movable implements IMovable {
 
     private Direction currentDirection; // Direction the car is facing
@@ -5,13 +8,16 @@ public abstract class Movable implements IMovable {
     private double y; // y position of car
     private double currentSpeed; // The current speed of the car
 
+    /**
+     * Constructor for class Movable.
+     * @param currentDirection Direction a movable object is currently facing.
+     * @param x X position a
+     * @param y
+     */
     public Movable(Direction currentDirection, double x, double y) {
         this.currentDirection = currentDirection;
     }
 
-    /**
-     * Moves Car depending on the direction it's facing. Inherits from Movable interface
-     */
     @Override
     public void move() {
         switch (currentDirection){
@@ -30,9 +36,6 @@ public abstract class Movable implements IMovable {
         }
     }
 
-    /**
-     * Turns the car to the left depending on it's current direction. Inherits from Movable interface
-     */
     @Override
     public void turnLeft() {
         switch (currentDirection) {
@@ -51,9 +54,7 @@ public abstract class Movable implements IMovable {
         }
     }
 
-    /**
-     * Turns the car to the right depending on it's current direction. Inherits from Movable interface
-     */
+
     @Override
     public void turnRight() {
         switch (getCurrentDirection()) {
@@ -71,51 +72,43 @@ public abstract class Movable implements IMovable {
                 break;
         }
     }
-    /**
-     * Gets x position of car
-     * @return x position of car
-     */
+
     @Override
     public double getX(){ return x; }
 
-    /**
-     * Gets y position of car
-     * @return y position of car
-     */
+
     @Override
     public double getY(){ return y; }
 
-    /**
-     * Sets x position for car
-     */
+
     @Override
     public void setX(double x){ this.x = x; }
 
-    /**
-     * Sets y position for car
-     */
+
     @Override
     public void setY(double y){ this.y = y; }
 
-    /**
-     * Returns current direction of car
-     * @return Current direction (the direction the car is currently facing)
-     */
+
     @Override
     public Direction getCurrentDirection() { return currentDirection; }
 
-    /**
-     * Sets current direction of car to a valid direction
-     * @param currentDirection Current direction of car to set
-     */
+
     @Override
     public void setCurrentDirection(Direction currentDirection) { this.currentDirection = currentDirection; }
 
+    /**
+     * Gets current speed of a movable object.
+     * @return Current speed of a movable object.
+     */
     @Override
     public double getCurrentSpeed() {
         return currentSpeed;
     }
 
+    /**
+     * Sets current speed of a movable object.
+     * @param currentSpeed Sets current speed of a movable object.
+     */
     @Override
     public void setCurrentSpeed(double currentSpeed) {
         this.currentSpeed = currentSpeed;

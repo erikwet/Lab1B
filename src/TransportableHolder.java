@@ -4,16 +4,29 @@ public class TransportableHolder implements ITransportableHolder {
 
     private Deque<ITransportable> transporterStorageList;
     private int maxStoredObjects;
-    private int maxTransportableWidth;
-    private int maxTransportableHeight;
-    private int maxTransportableLength;
+    private double maxTransportableWidth;
+    private double maxTransportableHeight;
+    private double maxTransportableLength;
     private boolean isLoadingPointOpen;
+    private double x;
+    private double y;
 
-    public TransportableHolder(int maxStoredObjects, int maxTransportableWidth, int maxTransportableHeight, int maxTransportableLength) {
+    public TransportableHolder(int maxStoredObjects, double maxTransportableWidth, double maxTransportableHeight, double maxTransportableLength, double x, double y, Deque<ITransportable> transporterStorageList) {
         this.maxStoredObjects = maxStoredObjects;
         this.maxTransportableWidth = maxTransportableWidth;
         this.maxTransportableHeight = maxTransportableHeight;
         this.maxTransportableLength = maxTransportableLength;
+        this.x = x;
+        this.y = y;
+        this.transporterStorageList = transporterStorageList;
+    }
+
+    public void openLoadingPoint (){
+        isLoadingPointOpen = true;
+    }
+
+    public void closeLoadingPoint(){
+        isLoadingPointOpen = false;
     }
 
     public void loadTransportable(ITransportable transportable){
@@ -24,7 +37,7 @@ public class TransportableHolder implements ITransportableHolder {
     public void unloadTransportable(){
         if(!isLoadingPointOpen) {
             ITransportable unloadedTransportable = transporterStorageList.pop();
-            unloadedTransportable.
+            unloadedTransportable.setX(getX()+3);
         }
     }
 
@@ -36,10 +49,10 @@ public class TransportableHolder implements ITransportableHolder {
     public boolean transporterIsNotFull(){ return transporterStorageList.size() < maxStoredObjects; }
 
     public boolean closeEnough(ITransportable transportable){
-        return transportable.getX() >= super.getX()-5 &&
-                transportable.getX() <= super.getX()+5 &&
-                transportable.getY() >= super.getY()-5 &&
-                transportable.getY() <= super.getY()+5;
+        return transportable.getX() >= getX()-5 &&
+                transportable.getX() <= getX()+5 &&
+                transportable.getY() >= getY()-5 &&
+                transportable.getY() <= getY()+5;
     }
 
     public void updateStoredObjectsPosition(){
@@ -47,5 +60,15 @@ public class TransportableHolder implements ITransportableHolder {
             transportable.setX(getX());
             transportable.setY(getY());
         }
+    }
+
+    @Override
+    public double getX() {
+        return x;
+    }
+
+    @Override
+    public double getY() {
+        return y;
     }
 }

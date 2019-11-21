@@ -1,5 +1,8 @@
 import java.awt.*;
 
+/**
+ *
+ */
 public class FlatbedTruck extends MotorizedVehicle {
 
     private int flatbedAngle;
