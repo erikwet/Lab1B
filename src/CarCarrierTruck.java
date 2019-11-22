@@ -7,7 +7,7 @@ import java.util.Deque;
  */
 public class CarCarrierTruck extends MotorizedVehicle implements ITransportableHolder{
 
-    private TransportableHolder transportableHolderParent; //A parent object used to create ERIK VAD HETER DELEGERING?????????????????????????????????+
+    private TransportableHolder transportableHolderParent;
     private Deque<ITransportable> transportableStorageList;
     private boolean isRampUp;
 

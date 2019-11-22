@@ -5,13 +5,14 @@ import java.awt.*;
  * Abstract superclass to all MotorizedVehicles
  */
 public abstract class MotorizedVehicle extends Movable{
-    private final int nrDoors; // Number of doors on the car
-    private final double enginePower; // Engine power of the car
-    private final Color color; // Color of the car
-    private final String modelName; // The car model name
-    private final double widthMeter;
-    private final double heightMeter;
-    private final double lengthMeter;
+
+    private final int nrDoors; // Number of doors on a motorized vehicle
+    private final double enginePower; // Engine power of a motorized vehicle
+    private final Color color; // Color of a motorized vehicle
+    private final String modelName; // The motorized vehicle model name
+    private final double widthMeter; // Width in meter of a motorized vehicle
+    private final double heightMeter; // Height in meter of a motorized vehicle
+    private final double lengthMeter; //
 
     /**
      * Constructor for MotorizedVehicle class
