@@ -1,4 +1,5 @@
 /**
+ * @author Oscar Arvidson and Erik Wetter
  * Interface for all transportable objects in the world.
  * Also extends interface IMovable.
  */

@@ -1,10 +1,10 @@
 import java.awt.*;
 
 /**
- * @author Oscar Arvidson och Erik Wetter
+ * @author Oscar Arvidson and Erik Wetter
  * Abstract superclass to all MotorizedVehicles
  */
-public abstract class MotorizedVehicle extends Movable{
+public class MotorizedVehicle extends Movable{
 
     private final int nrDoors; // Number of doors on a motorized vehicle
     private final double enginePower; // Engine power of a motorized vehicle
@@ -15,13 +15,17 @@ public abstract class MotorizedVehicle extends Movable{
     private final double lengthMeter; //
 
     /**
+     *
      * Constructor for MotorizedVehicle class
      * @param x x Position in world
      * @param y y Position in world
-     * @param nrDoors Number of doors on a Car
-     * @param enginePower Engine power of a Car
-     * @param color Color of a Car
-     * @param modelName Model name of a Car
+     * @param nrDoors Number of doors on a motorized vehicle
+     * @param enginePower Engine power of a motorized vehicle
+     * @param color Color of a motorized vehicle
+     * @param modelName Model name of a motorized vehicle
+     * @param widthMeter Width in meters of a motorized vehicle
+     * @param heightMeter Height in meters of a motorized vehicle
+     * @param lengthMeter Length in meters of a motorized vehicle
      */
     public MotorizedVehicle(Direction currentDirection, double x, double y, int nrDoors, double enginePower, Color color, String modelName, double widthMeter, double heightMeter, double lengthMeter) {
         super(currentDirection, x, y);
@@ -55,7 +59,7 @@ public abstract class MotorizedVehicle extends Movable{
 
     /**
      * Returns speed factor of motorized vehicle
-     * @return Returns speed factor (is overridden in subclasses)
+     * @return Returns speed factor
      */
     protected double speedFactor() { return 1; }
 
@@ -119,14 +123,26 @@ public abstract class MotorizedVehicle extends Movable{
         super.setCurrentSpeed(0);
     }
 
+    /**
+     * Gets width of motorized vehicle in meters
+     * @return Width in meters
+     */
     public double getWidthMeter() {
         return widthMeter;
     }
 
+    /**
+     * Gets height of motorized vehicle in meters
+     * @return Height in meters
+     */
     public double getHeightMeter() {
         return heightMeter;
     }
 
+    /**
+     * Gets length of motorized vehicle in meters
+     * @return Length in meters
+     */
     public double getLengthMeter() {
         return lengthMeter;
     }

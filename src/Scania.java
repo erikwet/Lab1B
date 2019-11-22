@@ -1,6 +1,7 @@
 import java.awt.*;
 
 /**
+ * @author Oscar Arvidson and Erik Wetter
  * Subclass of FlatbedTruck
  */
 public class Scania extends FlatbedTruck {

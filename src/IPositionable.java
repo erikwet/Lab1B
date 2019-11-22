@@ -1,4 +1,5 @@
 /**
+ * @author Oscar Arvidson and Erik Wetter
  * Interface for all objects in the world.
  */
 public interface IPositionable {

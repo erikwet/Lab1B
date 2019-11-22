@@ -1,5 +1,6 @@
 /**
- *
+ * @author Oscar Arvidson and Erik Wetter
+ * Abstract super class of all movable objects
  */
 public abstract class Movable implements IMovable {
 
@@ -11,13 +12,18 @@ public abstract class Movable implements IMovable {
     /**
      * Constructor for class Movable.
      * @param currentDirection Direction a movable object is currently facing.
-     * @param x X position a
-     * @param y
+     * @param x X position of an object in world
+     * @param y Y position of an object in world
      */
     public Movable(Direction currentDirection, double x, double y) {
         this.currentDirection = currentDirection;
+        this.x = x;
+        this.y = y;
     }
 
+    /**
+     * Makes object move in current direction
+     */
     @Override
     public void move() {
         switch (currentDirection){
@@ -36,6 +42,9 @@ public abstract class Movable implements IMovable {
         }
     }
 
+    /**
+     * Makes object turn left depending on current direction
+     */
     @Override
     public void turnLeft() {
         switch (currentDirection) {
@@ -54,7 +63,9 @@ public abstract class Movable implements IMovable {
         }
     }
 
-
+    /**
+     * Makes object turn right depending on current direction
+     */
     @Override
     public void turnRight() {
         switch (getCurrentDirection()) {
@@ -73,26 +84,45 @@ public abstract class Movable implements IMovable {
         }
     }
 
+    /**
+     * Gets x position for a object in the world.
+     * @return X position of a object in the world.
+     */
     @Override
     public double getX(){ return x; }
 
-
+    /**
+     * Gets y position for a object in the world.
+     * @return Y position of a object in the world.
+     */
     @Override
     public double getY(){ return y; }
 
-
+    /**
+     * Sets x position for an object.
+     * @param x X position the object should get.
+     */
     @Override
     public void setX(double x){ this.x = x; }
 
-
+    /**
+     * Sets y position for an object.
+     * @param y Y position the object should get.
+     */
     @Override
     public void setY(double y){ this.y = y; }
 
-
+    /**
+     * Returns current direction of object.
+     * @return Current direction of object.
+     */
     @Override
     public Direction getCurrentDirection() { return currentDirection; }
 
-
+    /**
+     * Sets current direction to an object.
+     * @param currentDirection The new direction the object should face.
+     */
     @Override
     public void setCurrentDirection(Direction currentDirection) { this.currentDirection = currentDirection; }
 

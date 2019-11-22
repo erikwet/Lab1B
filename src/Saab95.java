@@ -1,16 +1,13 @@
 import java.awt.*;
 
 /**
- * @author SOME
+ * @author Oscar Arvidson and Erik Wetter
  * Subclass of Car. Represents a car of model Saab95
  */
 public class Saab95 extends Car {
 
     private boolean turboOn;
 
-    /**
-     * Constructor for Saab95 class
-     */
     public Saab95(){
         super(Direction.NORTH, 50, 50, 5, 125, Color.black, "Saab95", 1.75, 1.53, 4.27);
 	    turboOn = false;
